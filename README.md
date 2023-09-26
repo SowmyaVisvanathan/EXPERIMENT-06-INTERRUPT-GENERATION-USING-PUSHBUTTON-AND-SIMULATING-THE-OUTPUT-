@@ -86,17 +86,29 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 ![image](https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png)
 
 
-  
-
 ## STM 32 CUBE PROGRAM :
+```
+#include "main.h"
+#include "stdbool.h"
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+
+	if((GPIO_Pin == GPIO_PIN_0))
+	{
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
+	}
 
 
-
+```
 ## Output screen shots of proteus  :
- 
+ ![image](https://github.com/SowmyaVisvanathan/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119475775/5915df3b-5b20-4cb1-aa0f-e48394f1ff89)
+
+![image](https://github.com/SowmyaVisvanathan/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119475775/88bba038-04ef-4fec-80e5-2cd574292c46)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ ![image](https://github.com/SowmyaVisvanathan/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119475775/c82c37fe-3d7f-46ea-915b-1a65aaa7ebb3)
+
  
 ## Result :
 Interfacing a push button and interrupt genrateion is simulated using proteus 
